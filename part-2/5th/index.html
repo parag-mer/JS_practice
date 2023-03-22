@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5th</title>
+</head>
+<body>
+  <h1 id="result"></h1>
+  <script>
+    var str = prompt("enter string");
+    var str_array = str.split(" ");
+    console.log(str_array);
+    var temp = 0;
+    console.log(temp);
+    var longest = "";
+    for (let i = 0; i < str_array.length; i++) 
+    {
+      console.log("for loop");
+      if(str_array[i].length > temp)
+      {
+        console.log("if");
+        temp = str_array[i].length;
+        console.log(temp);
+        longest = str_array[i];
+      }
+    }
+    document.getElementById("result").innerHTML = "the longest string is " + longest;
+  </script>
+</body>
+</html>

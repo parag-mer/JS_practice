@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4th</title>
+</head>
+<body>
+  <h1 id="old"></h1>
+  <h1 id="new"></h1>
+  <script>
+    let string = prompt("enter a string to reverse it");
+    var r_string = "";
+    document.getElementById("old").innerHTML = "old string " + string;
+    function reverse(str)
+    {
+      var temp = "";
+      for (let i = str.length; i >= 0; i--) 
+      {
+        if(i<str.length)
+        {
+          if(str[i] == str[i].toUpperCase())
+          {
+            temp += str[i].toLowerCase();
+          }
+          else
+          {
+            temp += str[i].toUpperCase();
+          }
+        } 
+      }
+      return(temp);
+    }
+    r_string = reverse(string);
+    document.getElementById("new").innerHTML = "new string " + r_string;
+
+    
+  </script>
+</body>
+</html>
