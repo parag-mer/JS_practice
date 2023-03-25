@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1st</title>
+</head>
+<body>
+  <h1 id="demo"></h1>
+  <script>
+    let size = prompt("how many numbers do you want to enter");
+    let num_array = [];
+    let new_array = [];
+    for (let i = 0; i < size; i++) 
+    {
+      num_array[i] = prompt("enter number " + (i+1));
+     
+    }
+    for (let i = 0; i < num_array.length; i++) 
+    {
+      if((num_array[i]%2) != 0)
+      {
+        new_array[i] = num_array[i];
+      }
+      else
+      {
+        continue;
+      }
+    }
+    document.getElementById("demo").innerHTML = "array of odd numbers from entered numbers " + new_array;
+
+  </script>
+</body>
+</html>
